@@ -15,6 +15,7 @@ VALID_STATUSES = {
 
 def load_tasks():
     if not TASKS_FILE.exists():
+        save_tasks([])
         return []
 
     try:
